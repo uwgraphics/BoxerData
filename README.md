@@ -1,7 +1,7 @@
 # Public Datasets
 
 |  Dataset Name| Description |Related Use case | Source
-| -| ----------- | ----------- | ----|
+| -| ----------------------------- | ----------- | ----|
 | Imputation| The Mushroom dataset that considers a testing set of 2,000 (of 8,124) randomly selected instances. | [Model Selection](../../user_guide/use_cases/3rd-level/case6)|https://archive.ics.uci.edu/ml/datasets/mushroom
 |IMDB Confidence | The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.|[Model Selection and Tuning](../../user_guide/use_cases/3rd-level/case4)|https://www.kaggle.com/suchitgupta60/imdb-data
 |recid| This dataset is used for fair learning: the Broward County recidivism dataset, popularized by ProPublica. The data set contains 6,172 instances and 14 numeric features (created by one-hot encoding the categorical features in the initial seven feature data set). 20% are held for testing. | [Fairness Assessment](../../user_guide/use_cases/3rd-level/case2)|https://github.com/algofairness/fairness-comparison
