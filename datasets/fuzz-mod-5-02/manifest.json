@@ -1,0 +1,76 @@
+{
+    "classes": [
+        "CO",
+        "HI",
+        "TC",
+        "TR"
+    ],
+    "classifiers": [
+        "baseline",
+        "CommonAuthorities",
+        "Negativity",
+        "PersonProperty",
+        "DirectAddress",
+        "OralCues"
+    ],
+    "features": {
+        "title": {
+            "type": "nominal",
+            "description": "title"
+        },
+        "author": {
+            "type": "nominal",
+            "description": "author"
+        },
+        "date of writing": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "date of writing"
+        },
+        "fuzz": {
+            "type": "categorical",
+            "categories": [
+                -1,
+                1
+            ],
+            "description": "fuzz"
+        },
+        "train_or_test": {
+            "type": "categorical",
+            "categories": [
+                "train",
+                "test"
+            ],
+            "description": "Training or Testing"
+        },
+        "length": {
+            "type": "ratio",
+            "bounded": false
+        },
+        "CommonAuthorities": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "CommonAuthorities Term Feature"
+        },
+        "Negativity": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "Negativity Term Feature"
+        },
+        "PersonProperty": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "PersonProperty Term Feature"
+        },
+        "DirectAddress": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "DirectAddress Term Feature"
+        },
+        "OralCues": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "OralCues Term Feature"
+        }
+    }
+}

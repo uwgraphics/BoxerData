@@ -1,0 +1,42 @@
+{
+  "datasetName": "Mushrooms Imputation",
+  "classes": [
+    "e",
+    "p"
+  ],
+  "classifiers": [
+    "clean",
+    "mode",
+    "smart"
+  ],
+  "features": {
+    "train_or_test": {
+      "type": "categorical",
+      "categories": ["train", "test"]
+    },
+    "cap_shape" : {
+      "type": "categorical",
+      "categories": ["u", "b", "c", "x", "f", "k", "s"]
+    },
+    "shape" : {
+      "type": "categorical",
+      "categories": ["u", "e", "t"]
+    },
+    "sColour" : {
+      "type": "categorical",
+      "categories": ["u", "k", "n", "b", "h", "r", "o", "u", "w", "y"]
+    },
+    "is_imputed": {
+      "type": "categorical",
+      "categories": ["yes", "no"]
+    },
+    "sColour_mode": {
+      "type": "categorical",
+      "categories": ["u", "k", "n", "b", "h", "r", "o", "u", "w", "y"]
+    },
+    "sColour_smart": {
+      "type": "categorical",
+      "categories": ["u", "k", "n", "b", "h", "r", "o", "u", "w", "y"]
+    }
+  }
+}

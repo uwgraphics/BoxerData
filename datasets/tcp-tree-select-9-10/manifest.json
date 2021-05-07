@@ -1,0 +1,134 @@
+{
+    "classes": [
+        "Neither",
+        "Play",
+        "Science"
+    ],
+    "classifiers": [
+        "N (ngrams)",
+        "C (chi^2)",
+        "W (worst)",
+        "R (random)",
+        "X (random2)"
+    ],
+    "features": {
+        "TCP": {
+            "type": "nominal",
+            "description": "TCP"
+        },
+        "ShortTitle": {
+            "type": "nominal",
+            "description": "ShortTitle"
+        },
+        "genre": {
+            "type": "categorical",
+            "categories": [
+                "Neither",
+                "Play",
+                "Science"
+            ],
+            "description": "genre"
+        },
+        "Date": {
+            "type": "nominal",
+            "description": "Date"
+        },
+        "Author": {
+            "type": "nominal",
+            "description": "Author"
+        },
+        "Pages": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "Pages"
+        },
+        "Pages(Max200)": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "Pages(Max200)"
+        },
+        "SinglePage": {
+            "type": "categorical",
+            "categories": [
+                0,
+                1
+            ],
+            "description": "SinglePage"
+        },
+        "LogPages": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "LogPages"
+        },
+        "lang": {
+            "type": "categorical",
+            "categories": [
+                "",
+                "English"
+            ],
+            "description": "lang"
+        },
+        "train_or_test": {
+            "type": "categorical",
+            "categories": [
+                "train",
+                "test"
+            ],
+            "description": "Training or Testing"
+        },
+        "length": {
+            "type": "ratio",
+            "bounded": false
+        },
+        "the": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "the Term Feature"
+        },
+        "and": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "and Term Feature"
+        },
+        "of": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "of Term Feature"
+        },
+        "to": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "to Term Feature"
+        },
+        "in": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "in Term Feature"
+        },
+        "that": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "that Term Feature"
+        },
+        "a": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "a Term Feature"
+        },
+        "is": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "is Term Feature"
+        },
+        "it": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "it Term Feature"
+        },
+        "be": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "be Term Feature"
+        }
+    }
+}

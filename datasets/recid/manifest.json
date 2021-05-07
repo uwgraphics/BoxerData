@@ -1,0 +1,116 @@
+{
+    "classes": [
+        "0",
+        "1"
+    ],
+    "classifiers": [
+        "ranfor",
+        "ranfor-c3",
+        "ranfor-pos"
+    ],
+    "features": {
+        "name": {
+            "type": "nominal",
+            "description": "name"
+        },
+        "two_year_recid": {
+            "type": "categorical",
+            "categories": [
+                0,
+                1
+            ],
+            "description": "two_year_recid"
+        },
+        "race": {
+            "type": "categorical",
+            "categories": [
+                "African-American",
+                "Asian",
+                "Caucasian",
+                "Hispanic",
+                "Native American",
+                "Other"
+            ],
+            "description": "race"
+        },
+        "age_cat": {
+            "type": "categorical",
+            "categories": [
+                "25 - 45",
+                "Greater than 45",
+                "Less than 25"
+            ],
+            "description": "age_cat"
+        },
+        "gender": {
+            "type": "categorical",
+            "categories": [
+                "Female",
+                "Male"
+            ],
+            "description": "gender"
+        },
+        "train_or_test": {
+            "type": "categorical",
+            "categories": [
+                "train",
+                "test"
+            ],
+            "description": "Training or Testing"
+        },
+        "length": {
+            "type": "ratio",
+            "bounded": false
+        },
+        "sex": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "sex Term Feature"
+        },
+        "age": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "age Term Feature"
+        },
+        "age_catN": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "age_catN Term Feature"
+        },
+        "race_African-American": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_African-American Term Feature"
+        },
+        "race_Asian": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_Asian Term Feature"
+        },
+        "race_Caucasian": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_Caucasian Term Feature"
+        },
+        "race_Hispanic": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_Hispanic Term Feature"
+        },
+        "race_Native American": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_Native American Term Feature"
+        },
+        "race_Other": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "race_Other Term Feature"
+        },
+        "juv_fel_count": {
+            "type": "ratio",
+            "bounded": false,
+            "description": "juv_fel_count Term Feature"
+        }
+    }
+}

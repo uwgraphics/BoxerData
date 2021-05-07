@@ -1,0 +1,32 @@
+{
+  "classes": [
+    "Iris-virginica",
+    "Iris-versicolor",
+    "Iris-setosa"
+  ],
+  "classifiers": [
+    "KNN",
+    "Naive Bayes",
+    "Decision Tree",
+    "Random Forest",
+    "SVM"
+  ],
+  "features": {
+    "SepalLengthCm": {
+      "type": "ratio",
+      "description": "Sepal length measured in cms"
+    },
+    "SepalWidthCm": {
+      "type": "ratio",
+      "description": "Speal width measured in cms"
+    },
+    "PetalLengthCm": {
+      "type": "ratio",
+      "description": "Petal length measured in cms"
+    },
+    "PetalWidthCm": {
+      "type": "ratio",
+      "description": "Petal width measured in cms"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "datasetName": "IMDB again",
+  "classes": [
+    "LOW",
+    "MED",
+    "HIGH"
+  ],
+  "classifiers": [
+    "lr",
+    "knn",
+    "lda",
+    "svm_w",
+    "svm",
+    "nb",
+    "nn",
+    "rf"
+  ],
+  "features": {
+    "lr_conf": {
+      "type": "ratio",
+      "description": "Linear Regression confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "knn_conf": {
+      "type": "ratio",
+      "description": "K-Nearest Neighbor confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "lda_conf": {
+      "type": "ratio",
+      "description": "LDA confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "svm_w_conf": {
+      "type": "ratio",
+      "description": "SVM-weighted confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "svm_conf": {
+      "type": "ratio",
+      "description": "SVM confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "nb_conf": {
+      "type": "ratio",
+      "description": "Naive Bayes confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "nn_conf": {
+      "type": "ratio",
+      "description": "Neural Network confidence",
+      "bounds": [ 0.0, 1.0 ]
+    },
+    "rf_conf": {
+      "type": "ratio",
+      "description": "Random Forest confidence",
+      "bounds": [ 0.0, 1.0 ]
+    }
+  }
+}
