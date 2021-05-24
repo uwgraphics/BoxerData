@@ -1,17 +1,18 @@
-{   "SERVER_URL" :  "http://localhost:3000/",
+{   "SERVER_URL" :  "https://raw.githubusercontent.com/uwgraphics/BoxerData/master/",
     "datasets": {
         "Iris": {
             "path": "datasets/iris/",
             "description": "",
-            "related_use_case":"",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/publication/demo/",
             "views_recommendation":[
-
+                {"name":"Performance_Overall"},
+                {"name":"Histogram","config":["SepalLengthCm"]}
             ]
         },
         "Imputation": {
             "path": "datasets/imputation/",
             "description": "This use case uses Mushroom dataset and considers a testing set of 2,000 (of 8,124) randomly selected instances.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case6/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/model-selection/",
             "views_recommendation":[
                 {"name":"MetricsParallel"},
                 {"name":"Performance_Overall"},
@@ -21,7 +22,7 @@
         "IMDB Confidence": {
             "path": "datasets/confidence/",
             "description": "The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case4/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/model-selection-tuning/",
             "views_recommendation":[
                 {"name":"Performance_Overall"},
                 {"name":"CumulativeAccuracy"},
@@ -31,7 +32,7 @@
         "recid": {
             "path": "datasets/recid/",
             "description": "We consider a standard test case for fair learning: the Broward County recidivism dataset, popularized by ProPublica. The data set contains 6,172 instances and 14 numeric features (created by one-hot encoding the categorical features in the initial seven feature data set). 20% are held for testing.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case2/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/fairness-assessment/",
             "views_recommendation":[
                 {"name":"Histogram","config":["race"]},
                 {"name":"Performance_Selection"},
@@ -41,7 +42,7 @@
         "date-12000-strat": {
             "path": "datasets/date-12000-strat/",
             "description": "The dataset for this use case is the TCP collection of historical documents. This use case took a random sample of 12,000 documents, and held out 30% using stratified sampling. While the testing set is balanced (1,800 per class), the training set is highly skewed (only 15% before 1642)",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case3/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/bias-discovery/",
             "views_recommendation":[
                 {"name":"Performance_Overall"},
                 {"name":"MetricsParallel"},
@@ -52,7 +53,7 @@
         "fuzz-mod-5-02": {
             "path": "datasets/fuzz-mod-5-02/",
             "description": "The data set is a collection of 554 plays written in the Early Modern Period (1470-1660). Five linguistic features are used. We classify plays with one of four genres (Comedy, History, Tragedy and Tragicomedy).",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case5/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/feature-sensitivity/",
             "views_recommendation":[
                 {"name":"Performance_Overall"},
                 {"name":"MetricsTable"},
@@ -62,7 +63,7 @@
         "tcp-tree-select-9-10": {
             "path": "datasets/tcp-tree-select-9-10/",
             "description": "This use case considers a corpus of 59,989 documents from a historical literary collection and the data counts the 500 most common English words in each document.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case1/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/model-selection-discovery/",
             "views_recommendation":[
                 {"name":"MetricsParallel"},
                 {"name":"Performance_Overall"},
@@ -73,7 +74,7 @@
         "(continuous) wine quality":{
             "path": "datasets/wine_quality_one_classifier/",
             "description": "This use case illustrates how detailed comparisons can improve threshold selection. The scenario uses wine quality benchmark from  which requires classifying the quality of a wine from its properties.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case7/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continuous-tuning/",
             "views_recommendation":[
                 {"name":"Performance_Overall"},
                 {"name":"Histogram","config":["ClassDistribution"]},
@@ -92,7 +93,7 @@
         "(continuous) heart disease":{
             "path": "datasets/heart_disease/",
             "description": "The Heart Disease prediction dataset is a standard data set used in machine learning education. Classifiers are trained to predict if a patient is likely to develop a disease (binary decision). The scenario is an example where the cost of a false negative error (not warning a patient of a potential problem) is more costly than a false positive (which may cause extra caution, or fear). It is also a scenario where a 'no-prediction' option is viable, recommending that patient is tested further has a lower cost than an error.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continuous-heart-example/",
             "views_recommendation":[
                 {"name":"Reliability_Curve","config":{
                     "classifiers":["lr","rf"],
@@ -125,7 +126,7 @@
         "(continuous) income":{
             "path":"datasets/income_original",
             "description": "This use case demonstrates how calibration benefits from detailed assessment. The scenario uses the income classification benchmark dataset from that has been downsampled. Classifiers determine whether an individual’s income is above a certain level.",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continous-model-selection/",
             "views_recommendation":[
                 {"name":"Performance_Overall"},
                 {"name":"Reliability_Curve","config":{
@@ -152,7 +153,7 @@
         "(continuous) cifar-sampled-scaling":{
             "path": "datasets/coarse-flowers-1in10-vgg16-scaling-0.0510",
             "description": "This use case shows how out approach can help with model selection and threshold tuning. A classifier was built for the CIFAR 100 computer vision benchmark using Tensorflow. The data set has 100 classes, and the trained classifier produces a distribution over these classes as its decision. Our goal is to create a binary classifier for a “meta-class” which combines 5 of the main classes. In particular, we want to classify flowers, which can be any one of 5 of the original classes. Because the test set contains all 100 classes, it is quite imbal- anced: flowers are only 5% of the total instances",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continous-detail-examination/",
             "views_recommendation":[
                 {"name":"Reliability_Curve","config":{
                     "classifiers":["largest","avgtop5", "sum"],
@@ -184,7 +185,7 @@
         "(continuous) cdate-2500": {
             "path": "datasets/cdate-2500",
             "description": "This use case considers a corpus of 59,989 documents from a historical literary collection: Text Creation Partnership (TCP) transcriptions of the Early English Books Online (EEBO). The data counts the 500 most common English words in each document. For the experiment, we took a random sample of 2500 documents, and held out 30% using stratified sampling.            ",
-            "related_use_case":"http://localhost:1313/Vis/Boxer/docs/user_guide/use_cases/3rd-level/case8/",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continuous-exmanination/",
             "views_recommendation":[
                 {"name":"Histogram","config":["date-bucket"]},
                 {"name":"Trinary_Performance_Confidence","config":{
