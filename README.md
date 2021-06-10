@@ -1,4 +1,13 @@
-# Public Datasets
+# Public Datasets of Boxer
+
+This repo contains all datasets used in Boxer demo. Some other useful resources are listed as follows:
+
+* [Boxer website](https://graphics.cs.wisc.edu/Vis/Boxer/)
+
+* [Online Demo](https://graphics.cs.wisc.edu/Vis/Boxer/demo/dist/index.html)
+
+* [Released Code](https://github.com/uwgraphics/BoxerRelease)
+
 
 |  Dataset Name| Description |Related Use case | Source
 | -| ----------------------------- | ----------- | ----|
