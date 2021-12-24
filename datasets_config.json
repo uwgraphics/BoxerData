@@ -150,6 +150,31 @@
                 }}
             ]
         },
+        "(continuous) income2":{
+            "path":"datasets/income2",
+            "description": "This is the income use case adapted to make a smaller figure in the paper.",
+            "related_use_case":"https://uwgraphics.github.io/BoxerDocs/docs/use_cases/continous-model-selection/",
+            "views_recommendation":[
+                {"name":"Performance_Overall"},
+                {"name":"Reliability_Curve","config":{
+                    "classifiers":["lr","nb"],
+                    "selection":"overall"}},
+                {"name":"Trinary_Performance_Confidence", "config":{
+                    "selection":"overall",
+                    "distribution":"trinary"}},
+                {"name":"Trinary_Instance_Distribuion","config":{
+                    "selection":"overall",
+                    "distribution":"score"}},
+                {"name":"Thresholds","config":{
+                    "lr":50,
+                    "nb":50
+                }},
+                {"name":"Bandwidths","config":{
+                    "lr":"0.40-0.60",
+                    "nb":"0.40-0.60"
+                }}
+            ]
+        },
         "(continuous) cifar-sampled-scaling":{
             "path": "datasets/coarse-flowers-1in10-vgg16-scaling-0.0510",
             "description": "This use case shows how out approach can help with model selection and threshold tuning. A classifier was built for the CIFAR 100 computer vision benchmark using Tensorflow. The data set has 100 classes, and the trained classifier produces a distribution over these classes as its decision. Our goal is to create a binary classifier for a “meta-class” which combines 5 of the main classes. In particular, we want to classify flowers, which can be any one of 5 of the original classes. Because the test set contains all 100 classes, it is quite imbal- anced: flowers are only 5% of the total instances",
